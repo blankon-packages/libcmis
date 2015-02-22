@@ -1,0 +1,98 @@
+libcmis (0.5.0-1blankon1) tambora; urgency=medium
+
+  * Upload for libreoffce 4.4.4 
+
+ -- Rene Engelhard <aftian@localhost>  Sun, 22 Feb 2015 14:31:26 +0000
+
+libcmis (0.5.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 16 Dec 2014 11:05:10 +0100
+
+libcmis (0.4.1-7) unstable; urgency=low
+
+  * use dh-autoreconf (closes: #748863)
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 26 May 2014 20:29:05 +0200
+
+libcmis (0.4.1-6) unstable; urgency=low
+
+  * explicitly build-depend on pkg-config. No idea why it worked before... 
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 08 May 2014 14:31:43 +0200
+
+libcmis (0.4.1-5) unstable; urgency=low
+
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 06 May 2014 20:21:12 +0200
+
+libcmis (0.4.1-4) experimental; urgency=low
+
+  * apply patch from Adam Concrad to fix int/bool confusion that
+    leads to the test suite failing on all big-endian architectures.
+    (closes: #737807)  
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 06 Feb 2014 07:12:43 +0100
+
+libcmis (0.4.1-3) experimental; urgency=low
+
+  * actually use buildflags.mk's CXXFLAGS everywhere, not only on arm,
+    and fix logic...
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 04 Dec 2013 13:46:56 +0100
+
+libcmis (0.4.1-2) experimental; urgency=low
+
+  * explicitely mention Cedric Bosdonnat and Cao Cuong Ngo
+    in debian/copyright
+  * include /usr/share/dpkg/{architecture,buildflags}.mk and
+    build with -O0 on arm to hack around API test crash (closes: #731116)
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 04 Dec 2013 09:23:49 +0000
+
+libcmis (0.4.1-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 26 Aug 2013 19:55:53 +0200
+
+libcmis (0.3.1-3) unstable; urgency=low
+
+  * build with --disable-werror (closes: #707448) 
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 09 May 2013 11:26:12 +0200
+
+libcmis (0.3.1-2) unstable; urgency=low
+
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 19 Apr 2013 00:24:14 +0200
+
+libcmis (0.3.1-1) experimental; urgency=low
+
+  * New upstream release
+  * build (and run) unit tests, now that we can disable the "long" tests
+  * update description (closes: #666669), Homepage:/Source:
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 05 Feb 2013 19:21:04 +0100
+
+libcmis (0.2.3-1) experimental; urgency=low
+
+  * New upstream release
+  * add depends on libcurl4-gnutls-dev, libxml2-dev to libcmis-dev
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 26 Jun 2012 13:38:24 +0200
+
+libcmis (0.2.2-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 04 Jun 2012 19:42:40 +0200
+
+libcmis (0.1.0-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 24 Dec 2011 14:23:23 +0000

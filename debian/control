@@ -1,0 +1,43 @@
+Source: libcmis
+Priority: optional
+Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
+XSBC-Original-Maintainer: Rene Engelhard <rene@debian.org>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libxml2-dev, libboost-dev, libboost-program-options-dev, libcurl4-gnutls-dev, libcppunit-dev, docbook-to-man, libboost-date-time-dev, dpkg-dev (>= 1.16.1), pkg-config, dh-autoreconf
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://libcmis.sourceforge.net/
+
+Package: libcmis-dev
+Section: libdevel
+Architecture: any
+Depends: libcmis-0.5-5 (= ${binary:Version}), ${misc:Depends}, libcurl4-gnutls-dev, libxml2-dev
+Description: CMIS protocol client library -- development
+ LibCMIS is a C++ client library for the CMIS interface.
+ .
+ This allows C++ applications to connect to any ECM behaving as a CMIS server
+ like Alfresco, Nuxeo.
+ .
+ This package contains the development files (headers, ...) for libcmis.
+
+Package: libcmis-0.5-5
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: CMIS protocol client library
+ LibCMIS is a C++ client library for the CMIS interface.
+ .
+ This allows C++ applications to connect to any ECM behaving as a CMIS server
+ like Alfresco, Nuxeo.
+
+Package: cmis-client
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: client for the CMIS protocol
+ LibCMIS is a C++ client library for the CMIS interface.
+ .
+ This allows C++ applications to connect to any ECM behaving as a CMIS server
+ like Alfresco, Nuxeo.
+ .
+ This package contains the cmis-client standalone application.
+
