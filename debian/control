@@ -2,7 +2,7 @@ Source: libcmis
 Priority: optional
 Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
 XSBC-Original-Maintainer: Rene Engelhard <rene@debian.org>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, libxml2-dev, libboost-dev, libboost-program-options-dev, libcurl4-gnutls-dev, libcppunit-dev, docbook-to-man, libboost-date-time-dev, dpkg-dev (>= 1.16.1), pkg-config, dh-autoreconf
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libxml2-dev, libboost-dev, libboost-program-options-dev, libcurl4-gnutls-dev, libcppunit-dev, docbook-to-man, libboost-date-time-dev (>= 1.58), dpkg-dev (>= 1.16.1), pkg-config, dh-autoreconf
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://libcmis.sourceforge.net/

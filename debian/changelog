@@ -1,8 +1,14 @@
-libcmis (0.5.0-1blankon1) tambora; urgency=medium
+libcmis (0.5.0-2blankon1) tambora; urgency=medium
 
-  * Upload for libreoffce 4.4.4 
+  * debian/control/depends libboost-date-time1.58.0 
 
- -- Rene Engelhard <aftian@localhost>  Sun, 22 Feb 2015 14:31:26 +0000
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 04 Aug 2015 01:38:01 +0700
+
+libcmis (0.5.0-2) unstable; urgency=low
+
+  * update boost.m4 to fix build with gcc-5 (closes: #777942)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 05 Apr 2015 08:42:39 +0200
 
 libcmis (0.5.0-1) experimental; urgency=medium
 
