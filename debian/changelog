@@ -1,6 +1,6 @@
 libcmis (0.5.0-2blankon1) tambora; urgency=medium
 
-  * debian/control/depends libboost-date-time1.58.0 
+  * debian/control/depends libboost-date-time 
 
  -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 04 Aug 2015 01:38:01 +0700
 
