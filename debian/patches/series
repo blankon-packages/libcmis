@@ -1,2 +1,3 @@
 fix-docbook-to-man-call.diff
 update_boost_m4.diff
+avoid-use-after-delete.patch

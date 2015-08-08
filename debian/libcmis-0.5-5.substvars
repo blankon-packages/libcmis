@@ -1,0 +1,2 @@
+shlibs:Depends=libboost-date-time1.55.0, libc6 (>= 2.14), libcmis-0.5-5, libcurl3-gnutls (>= 7.16.2), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.9), libxml2 (>= 2.7.4)
+misc:Depends=

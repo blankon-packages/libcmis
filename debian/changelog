@@ -1,8 +1,19 @@
-libcmis (0.5.0-2blankon1) tambora; urgency=medium
+libcmis (0.5.0-3blankon1) tambora; urgency=medium
 
-  * debian/control/depends libboost-date-time 
+  * Rebuild
+  * Disable rule auto-test
 
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 04 Aug 2015 01:38:01 +0700
+ -- Mahyuddin <yudi.al@gmail.com>  Sat, 08 Aug 2015 11:58:30 +0700
+
+libcmis (0.5.0-3) unstable; urgency=medium
+
+  * libstdc++6 transition: rename libcmis-0.5-5 to libcmis-0.5-5v5.
+  * bump libcppunit-dev build-dep
+
+  * merge from Ubuntu:
+    - Add avoid-use-after-delete.patch to fix test-failure
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 04 Aug 2015 14:00:05 +0000
 
 libcmis (0.5.0-2) unstable; urgency=low
 

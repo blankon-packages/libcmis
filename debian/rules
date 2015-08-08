@@ -27,13 +27,17 @@ override_dh_clean:
 	dh_clean
 
 override_dh_auto_configure:
+ifneq (,$(findstring nocheck,$(DEB_BUILD_OPTIONS)))
+	dh_auto_configure -- --disable-tests --disable-long-tests --disable-werror --disable-silent-rules
+else
 	dh_auto_configure -- --disable-long-tests --disable-werror --disable-silent-rules
+endif
 
 override_dh_auto_build:
 	$(MAKE)
 
-override_dh_auto_test:
-	$(MAKE) check
+#override_dh_auto_test:
+#	$(MAKE) check
 
 override_dh_auto_install:
 	dh_auto_install

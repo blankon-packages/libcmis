@@ -1,0 +1,23 @@
+From 58130d0f774242da1177ae2f77a711e7aaa8ab7d Mon Sep 17 00:00:00 2001
+From: David Tardon <dtardon@redhat.com>
+Date: Thu, 26 Feb 2015 14:48:27 +0100
+Subject: [PATCH] avoid use-after-delete
+
+---
+ qa/mockup/mockup-config.cxx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/qa/mockup/mockup-config.cxx b/qa/mockup/mockup-config.cxx
+index 7918cef..01fec24 100644
+--- a/qa/mockup/mockup-config.cxx
++++ b/qa/mockup/mockup-config.cxx
+@@ -49,7 +49,7 @@ namespace
+         }
+     }
+ 
+-    const char** lcl_toStringArray( vector< string > vect )
++    const char** lcl_toStringArray( const vector< string >& vect )
+     {
+         const char** array = new const char*[vect.size() + 1];
+         for ( size_t i = 0; i < vect.size( ); i++ )
+
